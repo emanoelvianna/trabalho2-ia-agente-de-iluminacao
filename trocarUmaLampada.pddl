@@ -1,12 +1,14 @@
+; Problema resolvido em menos de 1 minuto
+
 (define (problem trocarLampada)
 (:domain manutencao)
 (:objects Sala1 Corredor Deposito Escada Lampada)
 (:init (Em Corredor)
+	(Chao Corredor)
+	(Corredor Corredor)
 	(Sala Sala1)
 	(Queimada Sala1)
-	(Corredor Corredor)
 	(Deposito Deposito)
 	(Escada Escada)
-	(Chao Escada)
 	(Lampada Lampada)
-(:goal (and (Ligada Sala1) (Em Corredor))))
+(:goal (and (Ligada Sala1) (Em Corredor) (Chao Corredor))))

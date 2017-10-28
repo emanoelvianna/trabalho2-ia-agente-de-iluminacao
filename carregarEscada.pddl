@@ -1,9 +1,11 @@
+; Problema resolvido em menos de 1 minuto
+
 (define (problem carregarEscada)
 (:domain manutencao)
-(:objects Sala1 Corredor Deposito Escada)
+(:objects Corredor Deposito Escada)
 (:init (Em Corredor)
-	(Sala Sala1)
+	(Chao Corredor)
 	(Corredor Corredor)
 	(Deposito Deposito)
 	(Escada Escada)
-(:goal (and (Em Sala1) (Com Escada)))))
+(:goal (and (Em Corredor) (Com Escada)))))

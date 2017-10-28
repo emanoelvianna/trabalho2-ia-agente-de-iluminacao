@@ -1,9 +1,11 @@
+; Problema resolvido em menos de 1 minuto
+
 (define (problem carregarLampada)
 (:domain manutencao)
-(:objects Sala1 Corredor Deposito Lampada)
+(:objects Corredor Deposito Lampada)
 (:init (Em Corredor)
-	(Sala Sala1)
+	(Chao Corredor)
 	(Corredor Corredor)
 	(Deposito Deposito)
 	(Lampada Lampada)
-(:goal (and (Em Sala1) (Com Lampada)))))
+(:goal (and (Em Corredor) (Com Lampada)))))
