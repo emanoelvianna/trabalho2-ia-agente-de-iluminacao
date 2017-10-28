@@ -1,0 +1,7 @@
+(define (problem irParaDeposito)
+(:domain manutencao)
+(:objects Sala1 Corredor)
+(:init (Em Corredor)
+	(Sala Sala1)
+	(Corredor Corredor)
+(:goal (and (Em Sala1)))))
