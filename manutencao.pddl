@@ -34,15 +34,15 @@
 	
 (:action subir
     :parameters (?loc1 ?loc2) 
-    :precondition (and (Com ?loc1) (Escada ?loc1) (not(Alto ?loc1)) (Em ?loc2) (Chao ?loc2) )
-    :effect (and (Alto ?loc1) (Em ?loc2) (not(Chao ?loc2)) ))
+    :precondition (and (Com ?loc1) (Escada ?loc1) (not(Alto ?loc1)) (Em ?loc2) (Sala ?loc2) (Chao ?loc2) )
+    :effect (and (Com ?loc1) (Escada ?loc1) (Alto ?loc1) (Em ?loc2) (Sala ?loc2) (not(Chao ?loc2)) ))
 	
 (:action descer   
     :parameters (?loc1 ?loc2) 
     :precondition (and (Com ?loc1) (Escada ?loc1) (Alto ?loc1) (Em ?loc2) (not(Chao ?loc2)) )
-    :effect (and (not((Alto ?loc1)) (Em ?loc2) (Chao ?loc2) ))
+    :effect (and (Com ?loc1) (Escada ?loc1) (not((Alto ?loc1)) (Em ?loc2) (Sala ?loc2) (Chao ?loc2) ))
 	
 (:action trocarLampada   
     :parameters (?loc1 ?loc2 ?loc3) 
-    :precondition (and (Em ?loc1) (Sala ?loc1) (Queimada ?loc1) (Com ?loc2) (Escada ?loc2) (Alto ?loc2) (Com ?loc3) (Lampada ?loc3))
+    :precondition (and (Em ?loc1) (not(Chao ?loc1)) (Sala ?loc1) (Queimada ?loc1) (Com ?loc2) (Escada ?loc2) (Alto ?loc2) (Com ?loc3) (Lampada ?loc3))
     :effect (and (Em ?loc1) (Ligada ?loc1) (not(Queimada ?loc1)) (Alto ?loc2) (not(Chao ?loc1)) ))
