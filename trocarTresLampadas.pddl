@@ -1,8 +1,8 @@
-; Problema resolvido em uma media de 2 hora
+; Problema resolvido em uma media de 1 hora
 
 (define (problem trocarTresLampadas)
 (:domain manutencao)
-(:objects Sala1 Sala2 Sala3 Sala4 Corredor Deposito Escada Lampada)
+(:objects Sala1 Sala2 Sala3 Corredor Deposito Escada Lampada)
 (:init (Em Corredor)
 	(Chao Corredor)
 	(Corredor Corredor)
@@ -12,9 +12,7 @@
 	(Queimada Sala2)
 	(Sala Sala3)
 	(Queimada Sala3)
-	(Sala Sala4)
-	(Queimada Sala4)
 	(Deposito Deposito)
 	(Escada Escada)
 	(Lampada Lampada)
-(:goal (and (Em Corredor) (Chao Corredor) (Ligada Sala1) (Ligada Sala2) (Ligada Sala3) (Ligada Sala4) )))
+(:goal (and (Em Corredor) (Chao Corredor) (Ligada Sala1) (Ligada Sala2) (Ligada Sala3) )))
