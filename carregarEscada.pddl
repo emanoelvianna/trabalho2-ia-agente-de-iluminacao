@@ -3,7 +3,7 @@
 (define (problem carregarEscada)
 (:domain manutencao)
 (:objects Corredor Deposito Escada)
-(:init (Em Corredor)
+(:init 	(Em Corredor)
 	(Chao Corredor)
 	(Corredor Corredor)
 	(Deposito Deposito)
