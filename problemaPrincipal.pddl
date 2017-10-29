@@ -15,4 +15,4 @@
 	(Deposito Deposito)
 	(Escada Escada)
 	(Lampada Lampada)
-(:goal (and (Ligada Sala1) (Ligada Sala2) (Ligada Sala3) (Ligada Sala4) (Em Corredor) (Chao Corredor))))
+(:goal (and (Em Corredor) (Chao Corredor) (Ligada Sala1) (Ligada Sala2) (Ligada Sala3) (Ligada Sala4) )))

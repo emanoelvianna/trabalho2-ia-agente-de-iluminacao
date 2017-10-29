@@ -1,3 +1,5 @@
+; Problema resolvido em uma media de 5 minutos
+
 (define (problem trocarDuasLampadas)
 (:domain manutencao)
 (:objects Sala1 Sala2 Corredor Deposito Escada Lampada)
@@ -11,4 +13,4 @@
 	(Deposito Deposito)
 	(Escada Escada)
 	(Lampada Lampada)
-(:goal (and (Ligada Sala1) (Ligada Sala2) (Em Corredor) (Chao Corredor))))
+(:goal (and (Em Corredor) (Chao Corredor) (Ligada Sala1) (Ligada Sala2) )))
